@@ -1,0 +1,21 @@
+Gra "Snake" została zaimplementowana przy użyciu klasy Snake, która reprezentuje węża. 
+Klasa ta zawiera prywatne zmienne, takie jak długość węża, kierunek, pozycję głowy i ciało węża. 
+Konstruktor klasy inicjalizuje początkowe wartości węża. Destruktor jest odpowiedzialny za zwolnienie pamięci przy zakończeniu gry.
+
+Metoda move() odpowiada za poruszanie się węża. W zależności od obecnego kierunku, pozycja głowy jest aktualizowana, a następnie aktualizowane są pozycje ciała węża.
+
+Metoda changeDirection() umożliwia zmianę kierunku poruszania się węża na podstawie naciśniętego klawisza.
+
+Metody collidedWithSelf() i collidedWithWall() sprawdzają, czy wąż zderzył się ze sobą lub ścianą planszy.
+
+Metoda eatFood() zwiększa długość węża po zjedzeniu pożywienia.
+
+Metoda display() wyświetla planszę gry w konsoli. Głowa węża jest oznaczona jako "O", ciało jako "o", a puste miejsca jako "-".
+
+W funkcji main() tworzony jest obiekt klasy Snake, który reprezentuje grę. 
+
+Następnie w pętli while wykonuje się główna logika gry. 
+
+Plansza jest wyświetlana, sprawdzane są kolizje i zmieniany jest kierunek węża na podstawie naciśniętych klawiszy. 
+
+Wąż porusza się w każdej iteracji pętli, a pętla działa dopóki gra nie dojdzie do końca.
